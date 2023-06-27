@@ -580,8 +580,8 @@ a.active {
 }
 
 .portfolio_item img {
-    -webkit-filter: grayscale(40%);
-    filter: grayscale(40%);
+    -webkit-filter: grayscale(10%);
+    filter: grayscale(10%);
 }
 
 .portfolio-padding {
