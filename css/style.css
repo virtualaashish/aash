@@ -312,7 +312,7 @@ a.active {
      transition: transform 0.3s ease;
  }
 
- .youtube-btn:hover .youtube-icon {
+.youtube-btn:hover .youtube-icon {
      transform: scale(1.2);
  }
 
