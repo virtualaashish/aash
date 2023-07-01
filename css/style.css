@@ -297,6 +297,26 @@ a.active {
     height: 100vh;
 }
 
+.youtube-btn {
+    border: none;
+    background: none;
+    padding: 0;
+}
+
+.youtube-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.youtube-btn .youtube-icon {
+     transition: transform 0.3s ease;
+ }
+
+ .youtube-btn:hover .youtube-icon {
+     transform: scale(1.2);
+ }
+
+
 
 /* about section
 ==================================================*/
