@@ -560,9 +560,10 @@
 
     <script>
         function shareOnFacebook() {
-            var url = window.location.href; // Get the current page URL
-            var facebookUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(url);
-            window.open(facebookUrl, '_blank');
+            var popupPageUrl = window.location.href + "#blogPopup"; // Get the URL of the blog popup page
+            var encodedUrl = encodeURIComponent(popupPageUrl);
+            var facebookShareUrl = "https://www.facebook.com/sharer/sharer.php?u=" + encodedUrl;
+            window.open(facebookShareUrl, "_blank");
         }
     </script>
 </body>
