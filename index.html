@@ -486,12 +486,12 @@
     
 <!-- Blog Popup Modal -->
 <div id="blogPopup" class="modal fade" tabindex="-1" role="dialog">
-    <div class="modal-dialog" role="document">
+    <div class="modal-dialog modal-lg" role="document">
         <div class="modal-content">
             <div class="modal-header">
                     <span aria-hidden="true">&times;</span>
                 </button>
-                <h4 class="modal-title">Blog</h4>
+                <h4 class="modal-title">Recent activities</h4>
             </div>
             <div class="modal-body">
                 <!-- Add your blog content here -->
@@ -505,7 +505,7 @@
                     setting the stage for an unforgettable experience.
                 </p>
                 <div class="col-md-4">
-                    <img src="img/portfolio/personal/da1.png" alt="Image" class="img-responsive img-thumbnail" style="border: 1px solid #fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);">
+                    <img src="img/portfolio/personal/da1.png" alt="Image" class="img-responsive img-thumbnail" style="border: 1px solid #fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); width: 250px; height: auto;">
                 </div>
                 <p>The highlight of my performance was when
                      I introduced my own composition. The audience embraced
@@ -514,6 +514,10 @@
                         applause filled the air, and it was a humbling moment to
                          witness the genuine appreciation from those around me.
                 </p>
+                <div class="col-md-4">
+                    <img src="img/portfolio/personal/da2.png" alt="Image" class="img-responsive img-thumbnail" style="border: 1px solid #fff; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);">
+                </div>
+
                 <p>Just as the excitement peaked,
                      nature added its own touch to
                       the performance. The rainy season brought
@@ -529,10 +533,14 @@
                        compositions, the connection forged through music transcended the ordinary.
                         It was an unforgettable experience that 
                     reminded me of the immense impact music has on our emotions and 
-                    the bonds it creates between us.</p>   
+                    the bonds it creates between us.</p> 
+
+                <!-- Share Button -->
+                <a href="#" class="btn btn-primary" onclick="shareOnFacebook()">Share</a>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
         </div>
     </div>
 </div>
@@ -549,6 +557,14 @@
 
     <!--  main script  -->
     <script src="js/custom.js"></script>
+
+    <script>
+        function shareOnFacebook() {
+            var url = window.location.href; // Get the current page URL
+            var facebookUrl = 'https://www.facebook.com/sharer/sharer.php?u=' + encodeURIComponent(url);
+            window.open(facebookUrl, '_blank');
+        }
+    </script>
 </body>
 
 </html>
